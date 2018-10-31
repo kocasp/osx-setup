@@ -35,3 +35,52 @@
         - unar
         - wget
       tags: brew
+
+    - name: install items via cask
+      homebrew_cask: name={{ item }} state=present
+      with_items:
+        - adobe-reader
+        - alfred
+        - atom
+        - betterzipql
+        - brave
+        - caffeine
+        - caption
+        - chrome-remote-desktop-host
+        - coconutbattery
+        - dropbox
+        - evernote
+        - firefoxdeveloperedition
+        - flux
+        - github-desktop
+        - google-chrome
+        - google-drive
+        - insomniax
+        - iterm2
+        - java
+        - messenger
+        - osxfuse
+        - oversight
+        - postman
+        - qlcolorcode
+        - qlmarkdown
+        - qlmobi
+        - qlstephen
+        - quicklook-json
+        - rescuetime
+        - robomongo
+        - skim
+        - skype
+        - slack
+        - spotify
+        - suspicious-package
+        - the-unarchiver
+        - time-out
+        - tripmode
+        - tunnelbear
+        - vagrant
+        - virtualbox
+        - virtualbox-extension-pack
+        - vlc
+        - webpquicklook
+      tags: cask
